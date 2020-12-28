@@ -1,0 +1,107 @@
+<!--
+Developed By Aamir Malick!
+All Right-Reserved AamirMalick Team Copyright 2020-2030
+--!>
+<!doctype html>
+<html>
+<head>
+<title>Temperature Conversion</title>
+ <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+<meta name="description" content="Free Web tutorials,W3School, Github, Javascript Project, PHP Projects , Node.js Projects, Ajax Projects , Python Free Projects Download, Free Download Projects, Final Year Projects, Interview Aptitude Question, Free Online Training, Free Certification, Free Machine Learning Project Etc">
+  <meta name="keywords" content="HTML, CSS, JavaScript, PHP, Mysql, Ajax , Node.js ,Python, Django, Asp.net, Angular js , Javascript Framework, PHP Projects ideas 2021, PHP Projects 2022, PHP Project Free Download, Free Download Machine Learning, Free Web Course, Mern Stack Tutorial, Mean Stack Free Tutorial to Expert">
+  <meta name="author" content="Javascript, JS, Javascript Program, Python Temperature Conversion, Free Javascript Tutorial, Free Project Download,">
+  
+</head>
+<body>
+<center><h2 class="text-info"><u>Temperature Conversion Using Javascript(JS) with different Coding Style!</u></h2> </center>
+<br>
+<h3 class="text-primary" style="margin-left:150px;">Celsius to Fahrenheit</h3>
+<div class="container">
+<div class="form-group" style="width:300px;">
+  <label for="usr" style="float:left;">Enter the Celsius</label>
+  <input type="text" class="form-control" id="cel" required placeholder="Celsius Temperature" style="border:3px solid #BFDEFF;">
+</div>
+<div class="form-group" style="width:300px;">
+  <label for="usrs" style="float:left;">Enter the Fahrenheit</label>
+  <input type="text" class="form-control" id="fah" required placeholder="Fahrenheit Temperature" style="border:3px solid #BFDEFF;">
+</div> 
+<button class="btn btn-success" onclick="cToF()">Convert</button>
+
+<br>
+</div>
+
+<div class="containers" style="margin-left:700px; margin-top:-250px;">
+<h3 class="text-success" style="margin-left:10px;">Fahrenheit to  Celsius </h3>
+<div class="form-group" style="width:300px;">
+  <label for="usrss" style="">Enter the Fahrenheit</label>
+  <input type="text" class="form-control" id="cess" required placeholder="Fahrenheit Temperature" style="border:3px solid #BFDEFF;">
+</div>
+<div class="form-group" style="width:300px;">
+  <label for="usrssss" style="">Enter the Celsius</label>
+  <input type="text" class="form-control" id="fass" required placeholder="Celsius Temperature" style="border:3px solid #BFDEFF;">
+</div> 
+<button class="btn btn-danger" onclick="FToc()">Convert</button>
+
+
+
+</div> 
+<br>
+<div class="alert alert-danger" style="width:400px; margin-left:100px;">
+  <strong>Automatically!</strong> Get the Result without Clicking!
+</div>
+<div class="container" style="margin-left:130px;">
+  <label>Enter the Celsius:-</label> <br>
+  <input id="inputCelsius" type="number" placeholder="Enter the Celsius Temp" oninput="temperatureConverter(this.value)" onchange="temperatureConverter(this.value)" style="width:300px; border:3px solid #BFDEFF;">
+</div> <br>
+<p style="margin-left:150px;">Fahrenheit: <span id="outputFahrenheit" style="color:red; font-size:24px;"></span></p>
+
+
+<div class="alert alert-primary" style="width:400px; margin-left:650px; margin-top:-200px;">
+  <strong>Automatically!</strong> Get the Result without Clicking!
+</div>
+<div class="container" style="margin-left:700px;">
+  <label>Enter the Fahrenheit:-</label> <br>
+  <input id="inputCelsius" type="number" placeholder="Enter the Fahrenheit Temp" oninput="temperatureConverters(this.value)" onchange="temperatureConverter(this.value)" style="width:300px; border:3px solid #BFDEFF;">
+</div> <br>
+<p style="margin-left:712px;">Celsius: <span id="outputFahrenheits" style="color:red; font-size:24px;"></span></p>
+
+
+<script>
+
+
+function cToF() 
+{
+  var cTemp = document.getElementById("cel").value;
+  var cToFahr = cTemp * 9 / 5 + 32;
+  document.getElementById("fah").value = cToFahr;
+}
+function FToc() 
+{
+  var fTemp = document.getElementById("cess").value;
+  var fToCel =  (fTemp - 32) * 5 / 9;
+  document.getElementById("fass").value = fToCel ;
+}
+
+function temperatureConverter(valNum) {
+  valNum = parseFloat(valNum);
+  document.getElementById("outputFahrenheit").innerHTML=(valNum*1.8)+32;
+}
+
+
+function temperatureConverters(valNum) {
+  valNum = parseFloat(valNum);
+  document.getElementById("outputFahrenheits").innerHTML=(valNum-32) / 1.8;
+}
+</script>
+</body>
+</html>
+<!--
+Developed By Aamir Malick!
+All Right-Reserved AamirMalick Team Copyright 2020-2030
+--!>
